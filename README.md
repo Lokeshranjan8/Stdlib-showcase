@@ -1,4 +1,4 @@
-# Stdlib Showcase
+Analyzed Heart Disease dataset using stdlib math functions. I used the normal probability density function(`normalPDF`) to visualize age distribution, `normalCDF` to measure cholesterol risk across clinical thresholds, and `z-test` to validate whether the dataset mean cholesterol is significantly higher than the healthy standard of 200 mg/dl.
 
 ## Age Distribution
 
@@ -51,17 +51,17 @@ Columns used in this analysis:
 
 ---
 
-## Installation
+## How to Setup Locally
 
 ```bash
-git clone https://github.com/username/stdlib-showcase.git
-cd stdlib-showcase
+git clone https://github.com/username/Stdlib-showcase.git
+cd Stdlib-showcase
 npm install
 ```
 
 ---
 
-## Running the Analysis Scripts
+## Running the Scripts in Terminal
 
 ```bash
 # normal PDF —
