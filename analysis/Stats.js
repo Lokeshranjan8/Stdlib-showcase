@@ -3,6 +3,7 @@ import sqrt from '@stdlib/math-base-special-sqrt';
 import isnan from '@stdlib/math-base-assert-is-nan';
 import exp from '@stdlib/math-base-special-exp';
 import ttest2lib from '@stdlib/stats-ttest2';
+import pcorrtesresult from '@stdlib/stats-pcorrtest';
 
 var PI    = Math.PI;
 var SQRT2 = sqrt( 2.0 );
@@ -70,4 +71,8 @@ export function zPValue( z ) {
 
 export function ttest2(x1, x2) {
   return ttest2lib(x1, x2);
+}
+
+export function pcorrtestfn(x,y){
+    return pcorrtesresult(x, y, { alternative: 'two-sided' });
 }
