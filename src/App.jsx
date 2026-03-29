@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { BellCurve, CDFBars } from "./chats.jsx";
 import { ZTest } from "./zst.jsx";
 import { Ttest } from "./ttest.jsx";
+import { PcorrTest } from "./pcorrtst.jsx";
 import { mean, stdev, normalCDF } from "../analysis/Stats.js";
 
 function parseCSV(text) {
@@ -122,8 +123,9 @@ export default function App() {
         </div>
       )}
 
-      {data && <ZTest data={data} />}
+{data && <ZTest data={data} />}
       {data && <Ttest data={data} />}
+      {data && <PcorrTest data={data} />}
 
     </div>
   );
